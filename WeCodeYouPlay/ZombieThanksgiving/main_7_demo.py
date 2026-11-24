@@ -42,3 +42,8 @@ while not game.over:
  
     game.update(30)
 game.quit()
+
+'''
+Lesson 7 Topics:
+    
+'''

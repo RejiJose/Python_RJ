@@ -54,3 +54,8 @@ while not game.over:
     game.update(30)
 game.wait(K_q)
 game.quit()
+
+'''
+Lesson 8 Topics:
+    
+'''

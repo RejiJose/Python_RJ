@@ -42,6 +42,10 @@ while not game.over:
 # quit game
 game.quit()
 
+'''
+Lesson 4 Topics:
+    
+'''
 
 
 

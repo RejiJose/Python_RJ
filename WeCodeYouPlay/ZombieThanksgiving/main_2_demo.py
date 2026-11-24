@@ -10,7 +10,15 @@ game = Game( 800, 600, "Zombie Thanksgiving" )
 
 # draw background
 
-# draw zombie image, resize & draw it
+# create zombie image, resize & draw it
 
 
 # update game
+
+'''
+Lesson 2 Topics:
+    Add image variable
+    Resize image to specific dimensions and by a percentage
+    Draw image to canvas
+    Update game
+'''

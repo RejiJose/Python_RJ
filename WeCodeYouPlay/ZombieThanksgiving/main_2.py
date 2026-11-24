@@ -10,7 +10,7 @@ bk = Image("Zbk.jpg",game)
 bk.resizeTo( 800, 600 )
 # draw background
 bk.draw()
-# draw zombie image, resize & draw it
+# create zombie image, resize & draw it
 zombie = Image("zombie.png", game)
 zombie.resizeBy(-80)
 zombie.draw()
