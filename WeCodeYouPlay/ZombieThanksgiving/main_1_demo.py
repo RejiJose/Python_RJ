@@ -1,7 +1,7 @@
-# bring in the game library
+# link game library to main
 
 
-# create a variable, game, with game window dimensions(w x h) and title
+# create game variable with window dimensions(w x h) and game title
 
 
 '''

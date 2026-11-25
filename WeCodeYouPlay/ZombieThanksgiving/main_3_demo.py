@@ -1,7 +1,7 @@
-# bring in the game library
+# link game library to main
 from gamelib import *
 
-# create a variable, game, with game window dimensions(w x h) and title
+# create game variable with window dimensions(w x h) and game title
 game = Game( 800, 600, "Zombie Thanksgiving" )
 
 # create a variable, bk for background image, resize & draw it
@@ -24,11 +24,15 @@ crosshair = Image("crosshair.png", game)
 crosshair.resizeBy(-70)
 crosshair.draw()
 
-
 # update game
 game.update()
 
 '''
 Lesson 3 Topics:
-    
+    Make image move at a specified rate & direction: move( ), setSpeed(.., ..)
+    Make image bounce off screen edges: move(True)
+    Game loop: whil not game.over
+    Process inputs
+    game update (fps)
+    quit the game
 '''

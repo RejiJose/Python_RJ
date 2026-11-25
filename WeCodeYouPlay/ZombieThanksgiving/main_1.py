@@ -1,5 +1,5 @@
-# bring in the game library
+# link game library to main
 from gamelib import *
 
-# create a variable, game, with game window dimensions(w x h) and title
-game = Game( 800, 600, "Zombie Thanksgiving" )
+# create game variable with window dimensions(w x h) and game title
+game = Game(800,600,"Zombie Thanksgiving")

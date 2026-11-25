@@ -1,26 +1,24 @@
-# bring in the game library
+# import game library
 from gamelib import *
 
-# create a variable, game, with game window dimensions(w x h) and title
+# create game variable: dimensions(w x h) and title
 game = Game( 800, 600, "Zombie Thanksgiving" )
 
-# create a variable, bk for background image, resize
+# create background image & resize to canvas dimensions
 bk = Image("Zbk.jpg",game)
 bk.resizeTo( 800, 600 )
 
-# draw zombie image, resize & set speed
+# create zombie image, resize(%) & set speed values
 zombie = Image("zombie.png", game)
 zombie.resizeBy(-85)
-# set zombie speed
 zombie.setSpeed(2,60)
 
-# draw turkey image, resize & set speed
+# create turkey image, resize(%) & set speed values
 turkey = Image("turkey.gif", game)
 turkey.resizeBy(-50)
-# set turkey speed
 turkey.setSpeed(3,-45)
 
-# draw crosshair image, resize & draw it
+# create crosshair image, resize(%) & draw
 crosshair = Image("crosshair.png", game)
 crosshair.resizeBy(-70)
 crosshair.draw()
@@ -31,7 +29,7 @@ while not game.over:
     game.processInput()
     # draw background
     bk.draw()
-    # move zombie & turkey
+    # move zombie & turkey. Ensure bounce
     zombie.move(True)
     turkey.move(True)
 
