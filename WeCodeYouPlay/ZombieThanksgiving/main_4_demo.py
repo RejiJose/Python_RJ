@@ -12,6 +12,7 @@ bk.resizeTo( 800, 600 )
 zombie = Image("zombie.png", game)
 zombie.resizeBy(-85)
 zombie.setSpeed(2,60)
+# start zombie at random location
 
 # create turkey image, resize(%) & set speed values
 turkey = Image("turkey.gif", game)
@@ -21,17 +22,19 @@ turkey.setSpeed(3,-45)
 # create crosshair image, resize(%) & draw
 crosshair = Image("crosshair.png", game)
 crosshair.resizeBy(-70)
-crosshair.draw()
 
 # game loop
 while not game.over:
     # process inputs
     game.processInput()
-    # draw background
-    bk.draw()
+    # draw background & crosshair
+    bk.draw()    
+    crosshair.draw()
     # move zombie & turkey. Ensure bounce
     zombie.move(True)
     turkey.move(True)
+
+    # make crosshair follow mouse position
 
     # update game
     game.update(30)
@@ -42,7 +45,10 @@ game.quit()
 
 '''
 Lesson 4 Topics:
-    
+    Move object to given location: moveTo(x, y)
+    Get coordinates of mouse object
+    Make crosshair image follow mouse position
+    Start zombie at random location
 '''
 
 
