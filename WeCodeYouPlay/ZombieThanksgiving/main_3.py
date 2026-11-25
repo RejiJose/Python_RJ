@@ -21,14 +21,15 @@ turkey.setSpeed(3,-45)
 # create crosshair image, resize(%) & draw
 crosshair = Image("crosshair.png", game)
 crosshair.resizeBy(-70)
-crosshair.draw()
+
 
 # game loop
 while not game.over:
     # process inputs
     game.processInput()
-    # draw background
+    # draw background & crosshair
     bk.draw()
+    crosshair.draw()
     # move zombie & turkey. Ensure bounce
     zombie.move(True)
     turkey.move(True)
@@ -39,3 +40,13 @@ while not game.over:
 
 # quit game
 game.quit()
+
+'''
+Lesson 3 Topics:
+    Make image move at a specified rate & direction: move( ), setSpeed(.. , ..)
+    Make image bounce off screen edges: move(True)
+    Game loop: while not game.over
+    Process inputs
+    game update (fps)
+    quit the game
+'''
